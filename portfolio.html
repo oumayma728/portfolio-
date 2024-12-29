@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html">Oumayma Jlejla</a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./portfolio.html">Portfolio</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="https://www.facebook.com/profile.php?id=100029088845374&locale=fr_FR"><i class="fa fa-facebook"></i></a>
+                            <a href="https://github.com/oumayma728"><i class="fa fa-github"></i></a>                            
+                            <a href="https://www.linkedin.com/in/oumayma-jlejla/"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>About me</h2>
+                        <div class="breadcrumb__links">
+                            <a href="index.html">Home</a>
+                            <span>About</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <section class="portfolio">
+        <div class="container">
+            <div class="filter-buttons text-center mb-4">
+                <button class="project-btn active" data-filter="all">All Projects</button>
+                <button class="project-btn" data-filter="react">React JS</button>
+                <button class="project-btn" data-filter="mern">MERN</button>
+            </div>
+    
+            <!-- Portfolio Projects -->
+            <div class="row projects-container">
+                <!-- Project 1 -->
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="react">
+                    <div class="portfolio__item">
+                        <img src="img/portfolio/sos.png" alt="React Project" class="portfolio__item__img">
+                        <div class="portfolio__item__text">
+                            <h4>SOS Animaux</h4>
+                            <p>A platform to organize, join events, and communicate with campers.</p>
+                            <a href="javascript:void(0);" class="show-more-btn" onclick="openGallery('gallery1')">Show More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hidden Window Popup (Gallery 1) -->
+                <div id="gallery1" class="popup-overlay">
+                    <div class="popup-content">
+                        <span class="close-btn" onclick="closeGallery('gallery1')">&times;</span>
+                        <img src="img/portfolio/sos1.png" alt="Photo 1" class="popup-img">
+                        <img src="img/portfolio/sos2.png" alt="Photo 2" class="popup-img">
+                        <img src="img/portfolio/sos3.png" alt="Photo 2" class="popup-img">
+                        <img src="img/portfolio/sos4.png" alt="Photo 2" class="popup-img">
+                        <img src="img/portfolio/sos5.png" alt="Photo 2" class="popup-img">
+                        <img src="img/portfolio/sos6.png" alt="Photo 2" class="popup-img">
+                    </div>
+                </div>
+
+<!-- Project 2 -->
+<div class="col-lg-4 col-md-6 project-item" data-category="mern">
+    <div class="portfolio__item">
+        <img src="img/portfolio/ecommerce.png" alt="MERN Project" class="portfolio__item__img">
+        <div class="portfolio__item__text">
+            <h4>E-commerce Platform</h4>
+            <p>Full-stack MERN solution for online shopping and order tracking.</p>
+            <a href="javascript:void(0);" class="show-more-btn" onclick="expandPhotos(this)">Show More</a>
+        </div>
+
+        <!-- Hidden Photos -->
+        <div class="extra-photos" style="display: none;">
+            <img src="img/portfolio/ecom-1.jpg" alt="Ecom Extra 1" class="img-fluid mt-2">
+            <img src="img/portfolio/ecom-2.jpg" alt="Ecom Extra 2" class="img-fluid mt-2">
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">                        
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="https://www.facebook.com/profile.php?id=100029088845374&locale=fr_FR"><i class="fa fa-facebook"></i></a>
+                            <a href="https://github.com/oumayma728"><i class="fa fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/oumayma-jlejla/"><i class="fa fa-linkedin"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <a href="contact.html" class="read__more">Contact <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>My work</h5>
+                            <ul>
+                                <li><a href="portfolio.html">Latest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="footer__copyright__text">Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved 
+                        </p>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll('.portfolio__item__img');
+        
+            images.forEach(img => {
+                img.addEventListener('click', function () {
+                    const projectText = this.parentElement.querySelector('.portfolio__item__text');
+                    projectText.classList.toggle('hidden');
+                });
+            });
+        });
+        </script>
+        
+    <script>
+        function openGallery(galleryId) {
+            const popup = document.getElementById(galleryId);
+            popup.style.display = 'block';
+        }
+        
+        function closeGallery(galleryId) {
+            const popup = document.getElementById(galleryId);
+            popup.style.display = 'none';
+        }
+        </script>
+        
+    <script>document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll('.project-btn');
+        const projectItems = document.querySelectorAll('.project-item');
+    
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+    
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+    
+                // Filter project items
+                projectItems.forEach(item => {
+                    const category = item.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
